@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails viking: development" uuid="c2bcc76f-58e1-4948-b183-e41460ebd819">
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Rails viking: production" uuid="39dd7009-2321-4412-a07e-6a491cba6973" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <center><h1>Rozwiązanie zadania</h1></center>
+    <h3>Treść</h3>
+    <p><%= @exercise.content %></p>
+    <h3>Rozwiązanie</h3>
+    <p><%= @answer.solution %></p>
+    <h3>Nagroda</h3>
+    <p><%=@exercise.reward%></p>
+    
+    <% if !@answer.read  %>
+        <%= render 'new_result_form' %>
+      <%else%>
+        <%=render 'edit_result_form' %>
+    <%end%>
+
+  </div>
+</div>
+  

@@ -1,0 +1,12 @@
+<% if logged_as_student? %>
+  <%=render 'student_messages'%>
+<%else%>
+  <%=render 'teacher_messages'%>
+<% end  %>
+<script>
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    e.target // newly activated tab
+    e.relatedTarget // previous active tab
+  })
+</script>
+

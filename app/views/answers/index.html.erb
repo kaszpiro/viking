@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-lg-9 col-lg-offset-1">
+    <center><h1>Rozwiązania</h1></center>
+        <%= link_to 'Nieocenione', answers_path(read: false) , :class =>"btn btn-primary"%>
+        <%= link_to 'Ocenione', answers_path(read: true) , :class =>"btn btn-primary"%>
+        <!--nieocenione-->
+          <%=render 'unrated_list' if @param == "false"%>
+        <!--ocenione-->
+          <%= render 'rated_list' if @param == "true"%>
+    </div>
+  </div>
+
+
+
+
+
